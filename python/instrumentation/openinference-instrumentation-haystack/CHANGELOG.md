@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.1.25](https://github.com/d3x41/openinference/compare/python-openinference-instrumentation-haystack-v0.1.24...python-openinference-instrumentation-haystack-v0.1.25) (2025-06-01)
+
+
+### Features
+
+* add entrypoint for use in opentelemetry-instrument ([#1278](https://github.com/d3x41/openinference/issues/1278)) ([2106acf](https://github.com/d3x41/openinference/commit/2106acfd6648804abe9b95e41a49df26a500435c))
+* add re-ranker support in haystack ([#894](https://github.com/d3x41/openinference/issues/894)) ([88ab293](https://github.com/d3x41/openinference/commit/88ab29345e33508120a626374ff309d8dbd65bdb))
+* define openinference_instrumentor entry points for all libraries ([#1290](https://github.com/d3x41/openinference/issues/1290)) ([4b69fdc](https://github.com/d3x41/openinference/commit/4b69fdc13210048009e51639b01e7c0c9550c9d1))
+
+
+### Bug Fixes
+
+* CI Failures For Haystack ([#1736](https://github.com/d3x41/openinference/issues/1736)) ([673dc40](https://github.com/d3x41/openinference/commit/673dc4071845aa3282f9516de6a57d4c92790240))
+* **haystack:** ensure compatibility with haystack 2.9 ([#1205](https://github.com/d3x41/openinference/issues/1205)) ([6ee2ebf](https://github.com/d3x41/openinference/commit/6ee2ebf95c88bf54b2a65dfcc04ab72d8f20a7db))
+* **haystack:** ensure haystack is not a runtime dependency ([#959](https://github.com/d3x41/openinference/issues/959)) ([c06813c](https://github.com/d3x41/openinference/commit/c06813c709331b76b5d65400eca337510d1e7ed3))
+* **haystack:** ensure important attributes such as span kind are not lost ([#917](https://github.com/d3x41/openinference/issues/917)) ([963ba4a](https://github.com/d3x41/openinference/commit/963ba4acf8cc7eaad4a4f780c5e50810fb876c8a))
+* **haystack:** fixing ci issues for haystack-ai ([#1623](https://github.com/d3x41/openinference/issues/1623)) ([daffa8e](https://github.com/d3x41/openinference/commit/daffa8e3fa9825daa76268a91a208b8c77dd1cb1))
+* **haystack:** improve heuristic for identifying component type ([#919](https://github.com/d3x41/openinference/issues/919)) ([bdfbbdb](https://github.com/d3x41/openinference/commit/bdfbbdb9c464ec0c2b730d7d70692ad346ce09f0))
+* **haystack:** improve span names and mask output embeddings ([#903](https://github.com/d3x41/openinference/issues/903)) ([7c754f3](https://github.com/d3x41/openinference/commit/7c754f340982d678e9362e4da82594589e98cba7))
+* **haystack:** remove remaining haystack import ([#961](https://github.com/d3x41/openinference/issues/961)) ([fe62e3f](https://github.com/d3x41/openinference/commit/fe62e3f23c31f88ba99ddab2ca6b453677e7dd31))
+* **haystack:** safely get embedding model name ([#965](https://github.com/d3x41/openinference/issues/965)) ([3a9286b](https://github.com/d3x41/openinference/commit/3a9286b64d62d289d2cbaacb5672e01f4fc6fa3a))
+* **haystack:** update haystack for compatibility with 2.10 ([#1295](https://github.com/d3x41/openinference/issues/1295)) ([2f6c607](https://github.com/d3x41/openinference/commit/2f6c6078e4e1412306bbf954e2f9ad35336f3abc))
+* increase version lower bound for openinference-instrumentation ([#1012](https://github.com/d3x41/openinference/issues/1012)) ([3236d27](https://github.com/d3x41/openinference/commit/3236d2733a46b84d693ddb7092209800cde8cc34))
+* increased minimum supported version of openinference-instrumentation to 0.1.27 ([#1507](https://github.com/d3x41/openinference/issues/1507)) ([a55edfa](https://github.com/d3x41/openinference/commit/a55edfa8900c1f36a73385c7d03f91cffadd85c4))
+* support python 3.13 and drop python 3.8 ([#1263](https://github.com/d3x41/openinference/issues/1263)) ([5bfaa90](https://github.com/d3x41/openinference/commit/5bfaa90d800a8f725b3ac7444d16972ed7821738))
+* update lower bound on openinference-semantic-conventions ([#1567](https://github.com/d3x41/openinference/issues/1567)) ([c2f428c](https://github.com/d3x41/openinference/commit/c2f428c5916c3dd62cf6670358f37111d4f7fd25))
+
+
+### Documentation
+
+* fix license to be openinference ([#1353](https://github.com/d3x41/openinference/issues/1353)) ([85d435b](https://github.com/d3x41/openinference/commit/85d435be3af3de5424494cfbdd654454688b7377))
+
 ## [0.1.24](https://github.com/Arize-ai/openinference/compare/python-openinference-instrumentation-haystack-v0.1.23...python-openinference-instrumentation-haystack-v0.1.24) (2025-05-30)
 
 
