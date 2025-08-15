@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.6](https://github.com/d3x41/openinference/compare/java-openinference-instrumentation-springAI-v0.1.5...java-openinference-instrumentation-springAI-v0.1.6) (2025-08-15)
+
+
+### Features
+
+* new experimental release ([#2050](https://github.com/d3x41/openinference/issues/2050)) ([3afeed2](https://github.com/d3x41/openinference/commit/3afeed2d72d52a0d96217c9c1c6e1f7d3e983c73))
+* Spring AI instrumentation, Java 17 update ([#2036](https://github.com/d3x41/openinference/issues/2036)) ([b260225](https://github.com/d3x41/openinference/commit/b2602255b7954296a70fa02b2c98d67c514d9b9f))
+* Upgrade workflow java 17 ([#2044](https://github.com/d3x41/openinference/issues/2044)) ([2084e8e](https://github.com/d3x41/openinference/commit/2084e8e48761fbb9e575bf4fbfc0f75ba3998d2e))
+
+
+### Bug Fixes
+
+* jreleaser dependency release, all packages need their version ([#2075](https://github.com/d3x41/openinference/issues/2075)) ([5a2de93](https://github.com/d3x41/openinference/commit/5a2de939136b2d151a831e8911a62a0c3f7b7717))
+* trigger springAI release ([#2061](https://github.com/d3x41/openinference/issues/2061)) ([e97f324](https://github.com/d3x41/openinference/commit/e97f324ca8a12d788148edd9a031fabfe7055e55))
+
 ## [0.1.5](https://github.com/Arize-ai/openinference/compare/java-openinference-instrumentation-springAI-v0.1.4...java-openinference-instrumentation-springAI-v0.1.5) (2025-08-13)
 
 

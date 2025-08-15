@@ -1,5 +1,46 @@
 # Changelog
 
+## [5.0.0](https://github.com/d3x41/openinference/compare/python-openinference-instrumentation-llama-index-v4.3.4...python-openinference-instrumentation-llama-index-v5.0.0) (2025-08-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* support chat message content blocks for llama-index >= 0.12.3 ([#1446](https://github.com/d3x41/openinference/issues/1446))
+
+### Features
+
+* add entrypoint for use in opentelemetry-instrument ([#1278](https://github.com/d3x41/openinference/issues/1278)) ([2106acf](https://github.com/d3x41/openinference/commit/2106acfd6648804abe9b95e41a49df26a500435c))
+* add get_current_span helper function for llama-index ([#1165](https://github.com/d3x41/openinference/issues/1165)) ([b46931c](https://github.com/d3x41/openinference/commit/b46931c7cec73f73873a3ae15003f3c6c52173e1))
+* add toggle to separate trace from runtime context ([#1464](https://github.com/d3x41/openinference/issues/1464)) ([0865a69](https://github.com/d3x41/openinference/commit/0865a69904119676703e5ca26600458dd9fb60f2))
+* define openinference_instrumentor entry points for all libraries ([#1290](https://github.com/d3x41/openinference/issues/1290)) ([4b69fdc](https://github.com/d3x41/openinference/commit/4b69fdc13210048009e51639b01e7c0c9550c9d1))
+* **llama-index py:** capture reasoning, cache, and audio tokens ([#1489](https://github.com/d3x41/openinference/issues/1489)) ([9d0ec39](https://github.com/d3x41/openinference/commit/9d0ec3991a6adf7932b0b2069f38a6e83bb1b752))
+* **llama-index:** Add LLM provider detection with lazy imports - res… ([#1710](https://github.com/d3x41/openinference/issues/1710)) ([f20ac82](https://github.com/d3x41/openinference/commit/f20ac827b1b38fe298e69753f6718b52e0807aa0))
+* support chat message content blocks for llama-index &gt;= 0.12.3 ([#1446](https://github.com/d3x41/openinference/issues/1446)) ([291dc0a](https://github.com/d3x41/openinference/commit/291dc0a8d071f6b3a25b5b5cd8a5fe2d756a3cda))
+
+
+### Bug Fixes
+
+* Bump llama index version for tests + fix tests ([#1992](https://github.com/d3x41/openinference/issues/1992)) ([a70bcd5](https://github.com/d3x41/openinference/commit/a70bcd5090568dcf48b56cc2feb081d33febf3de))
+* capture tools from chat kwargs ([#1509](https://github.com/d3x41/openinference/issues/1509)) ([2083836](https://github.com/d3x41/openinference/commit/2083836872dd9b3f4c40bcf66a2c3054f30aa59a))
+* get_current_span should return None when llama-index is not instrumented ([#1169](https://github.com/d3x41/openinference/issues/1169)) ([12d64bc](https://github.com/d3x41/openinference/commit/12d64bc489bc1530458f10e815f771ac8a42fd02))
+* handle multiple embedding events for llama-index ([#1166](https://github.com/d3x41/openinference/issues/1166)) ([0cef233](https://github.com/d3x41/openinference/commit/0cef233aa3ad60a17bbc28e4c80d1d1bb859f360))
+* increased minimum supported version of openinference-instrumentation to 0.1.27 ([#1507](https://github.com/d3x41/openinference/issues/1507)) ([a55edfa](https://github.com/d3x41/openinference/commit/a55edfa8900c1f36a73385c7d03f91cffadd85c4))
+* llama-index support vertex-ai token counts ([#1986](https://github.com/d3x41/openinference/issues/1986)) ([f75b573](https://github.com/d3x41/openinference/commit/f75b573fe09851a2708de8aa26fef388138256c3))
+* **llama-index:** Capture tool call id from additional_kwargs ([#1299](https://github.com/d3x41/openinference/issues/1299)) ([14c1c0c](https://github.com/d3x41/openinference/commit/14c1c0c8f206a00f6cf67a9c1995c24283687f37))
+* **llama-index:** capture tool calls from anthropic chat response ([#1177](https://github.com/d3x41/openinference/issues/1177)) ([e1ba6a5](https://github.com/d3x41/openinference/commit/e1ba6a5dcfc7f6b43cbe40d62e7bff55d45a3f12))
+* **llama-index:** coerce token counts to be integers ([#1183](https://github.com/d3x41/openinference/issues/1183)) ([3af6ca6](https://github.com/d3x41/openinference/commit/3af6ca626c8f37c931eb51b846b0b3d24afdb615))
+* **llama-index:** extract token counts for groq when streaming ([#1174](https://github.com/d3x41/openinference/issues/1174)) ([0aafe9c](https://github.com/d3x41/openinference/commit/0aafe9c78a4455ab2612a34a5c648e1362c338cc))
+* **llama-index:** fix typo in llama-index entry point ([#1288](https://github.com/d3x41/openinference/issues/1288)) ([15f3b59](https://github.com/d3x41/openinference/commit/15f3b5949121ce9c71f5f41d098858e492d4f5dd))
+* **llama-index:** handle BaseAgent import changes in v0.13.0+ ([#2023](https://github.com/d3x41/openinference/issues/2023)) ([62ce073](https://github.com/d3x41/openinference/commit/62ce073c98887851dd02dfd785b791e7e7ca9cb5))
+* **llama-index:** tools ui fix ([#1802](https://github.com/d3x41/openinference/issues/1802)) ([c81bda4](https://github.com/d3x41/openinference/commit/c81bda4e490677913e72d48509112f544970d57c))
+* replace logger.exception() with repr() ([#1385](https://github.com/d3x41/openinference/issues/1385)) ([3b924da](https://github.com/d3x41/openinference/commit/3b924da0b823e23c9170a6dae682bb0488c884cb))
+* support python 3.13 and drop python 3.8 ([#1263](https://github.com/d3x41/openinference/issues/1263)) ([5bfaa90](https://github.com/d3x41/openinference/commit/5bfaa90d800a8f725b3ac7444d16972ed7821738))
+
+
+### Documentation
+
+* fix license to be openinference ([#1353](https://github.com/d3x41/openinference/issues/1353)) ([85d435b](https://github.com/d3x41/openinference/commit/85d435be3af3de5424494cfbdd654454688b7377))
+
 ## [4.3.4](https://github.com/Arize-ai/openinference/compare/python-openinference-instrumentation-llama-index-v4.3.3...python-openinference-instrumentation-llama-index-v4.3.4) (2025-08-01)
 
 
